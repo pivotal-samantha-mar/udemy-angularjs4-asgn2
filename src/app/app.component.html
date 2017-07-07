@@ -1,0 +1,18 @@
+<h3>Task 1 </h3>
+<p> Add a input field which updates a property (username) via two-way binding</p>
+<input type = "text" [(ngModel)] = "username">
+
+<h3>Task 2 </h3>
+<p>Output the username via string interpolation</p>
+<p>Username: {{username}}</p>
+
+<h3> Task 3 / 4</h3>
+<p>Add button which can only be clicked if username is not empty</p>
+<p>Upon clicking the button, the username should be reset to an empty string</p>
+<button 
+        [disabled] = "username == ''"
+        (click) = "clear()" >
+        Reset
+</button>
+
+
